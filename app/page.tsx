@@ -46,7 +46,7 @@ export default function Home() {
         </div>
 
         <p className="font-lora text-carved-olive/60 text-xs mt-4 tracking-wide">
-          Join the list · Unsubscribe anytime · No spam, ever
+          Free instant download · Unsubscribe anytime · No spam, ever
         </p>
       </section>
 
