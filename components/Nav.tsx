@@ -10,8 +10,8 @@ export default function Nav() {
   return (
     <nav className="w-full bg-parchment border-b border-warm-oak/20 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center">
+        {/* Logo + wordmark */}
+        <Link href="/" className="flex items-center gap-3">
           <Image
             src="/ur-logo-transparent.png"
             alt="Unfiltered Roots"
@@ -20,6 +20,9 @@ export default function Nav() {
             className="object-contain h-14 w-auto"
             priority
           />
+          <span className="font-display text-deep-olive tracking-wide uppercase text-lg leading-none">
+            Unfiltered Roots
+          </span>
         </Link>
 
         {/* Desktop nav */}

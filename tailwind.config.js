@@ -18,6 +18,7 @@ module.exports = {
         ebony: '#3D3020',
       },
       fontFamily: {
+        display: ['Alfa Slab One', 'Georgia', 'serif'],
         serif: ['Georgia', 'serif'],
         mono: ['monospace'],
       },

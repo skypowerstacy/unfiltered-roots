@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav'
 import EmailCapture from '@/components/EmailCapture'
 import Link from 'next/link'
+import Image from 'next/image'
 import { products } from '@/lib/products'
 
 const pillars = [
@@ -19,6 +20,18 @@ export default function Home() {
 
       {/* HERO */}
       <section className="max-w-4xl mx-auto px-6 pt-20 pb-24 text-center">
+        {/* Logo */}
+        <div className="flex justify-center mb-8">
+          <Image
+            src="/ur-logo-transparent.png"
+            alt="Unfiltered Roots"
+            width={280}
+            height={280}
+            className="object-contain"
+            priority
+          />
+        </div>
+
         {/* Tagline above */}
         <p className="font-cinzel text-xs tracking-[0.3em] uppercase text-saddle mb-8">
           Unfiltered Truth · Rooted Living
