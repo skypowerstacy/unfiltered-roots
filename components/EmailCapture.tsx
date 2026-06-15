@@ -41,8 +41,8 @@ export default function EmailCapture({ variant = 'hero', source = 'website' }: E
   if (variant === 'hero') {
     return (
       <div className="w-full max-w-lg mx-auto">
-        <p className="text-dark-wood font-lora text-sm tracking-widest uppercase text-center mb-4">
-          Free Clean Home Starter Checklist
+        <p className="text-warm-oak font-lora text-sm tracking-widest uppercase text-center mb-4">
+          Get the Free Clean Home Checklist
         </p>
         {status === 'success' ? (
           <div className="bg-carved-olive text-parchment p-4 text-center font-lora text-sm leading-relaxed">
@@ -63,7 +63,7 @@ export default function EmailCapture({ variant = 'hero', source = 'website' }: E
               disabled={status === 'loading'}
               className="px-8 py-4 bg-saddle text-parchment font-cinzel font-bold tracking-widest uppercase text-sm hover:bg-warm-oak transition-colors duration-300 disabled:opacity-70 whitespace-nowrap"
             >
-              {status === 'loading' ? 'Joining...' : 'Get It Free →'}
+              {status === 'loading' ? 'Sending...' : 'Get It Free →'}
             </button>
           </form>
         )}
@@ -78,10 +78,10 @@ export default function EmailCapture({ variant = 'hero', source = 'website' }: E
     return (
       <div className="bg-deep-olive/5 border border-deep-olive/10 p-8">
         <h3 className="font-cinzel font-bold text-xl text-deep-olive tracking-wide mb-2">
-          The Unfiltered Edit
+          Get the Free Clean Home Checklist
         </h3>
-        <p className="font-lora text-dark-wood text-sm leading-relaxed mb-6">
-          Weekly — one swap, one ingredient to avoid, one product I actually use. No overwhelm.
+        <p className="font-lora text-carved-olive text-sm leading-relaxed mb-6">
+          10 swaps to make right now — delivered straight to your inbox.
         </p>
         {status === 'success' ? (
           <div className="bg-carved-olive text-parchment p-4 text-center font-lora text-sm">
@@ -102,7 +102,7 @@ export default function EmailCapture({ variant = 'hero', source = 'website' }: E
               disabled={status === 'loading'}
               className="px-6 py-3 bg-saddle text-parchment font-cinzel font-bold tracking-widest uppercase text-xs hover:bg-warm-oak transition-colors duration-300 disabled:opacity-70"
             >
-              {status === 'loading' ? 'Joining...' : 'Join The List →'}
+              {status === 'loading' ? 'Sending...' : 'Get It Free →'}
             </button>
           </form>
         )}

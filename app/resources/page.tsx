@@ -85,11 +85,11 @@ export default function Resources() {
       {/* Newsletter */}
       <section className="max-w-2xl mx-auto px-6 py-20 text-center">
         <h2 className="font-cinzel font-bold text-2xl text-deep-olive tracking-wide mb-3">
-          New swaps every week
+          Get the Free Clean Home Checklist
         </h2>
         <p className="font-lora text-carved-olive text-base leading-relaxed mb-8">
-          I update this list regularly as I find new products worth recommending.
-          Join the newsletter to get new swaps delivered weekly.
+          10 swaps to make right now — the exact changes I made in my own home.
+          Delivered straight to your inbox, free.
         </p>
         <EmailCapture variant="hero" source="resources-page" />
       </section>

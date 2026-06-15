@@ -2,21 +2,24 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
     <nav className="w-full bg-parchment border-b border-warm-oak/20 sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex flex-col leading-none">
-          <span className="font-cinzel font-black text-deep-olive tracking-widest uppercase text-lg">
-            Unfiltered
-          </span>
-          <span className="font-cinzel font-bold text-saddle tracking-[0.3em] uppercase text-xs">
-            Roots
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/ur-logo.png"
+            alt="Unfiltered Roots"
+            width={3870}
+            height={2160}
+            className="h-12 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}

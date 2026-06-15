@@ -101,7 +101,7 @@ export default function Home() {
               <a key={product.name} href={product.affiliateUrl}
                 target="_blank" rel="noopener noreferrer sponsored"
                 className="group bg-parchment/10 border border-parchment/10 p-6 hover:bg-parchment/20 transition-colors duration-300">
-                <div className="text-xs font-cinzel tracking-widest uppercase text-saddle mb-2">
+                <div className="text-xs font-cinzel tracking-widest uppercase text-warm-oak mb-2">
                   Replaces: {product.swap}
                 </div>
                 <h3 className="font-cinzel font-bold text-parchment text-sm mb-2 group-hover:text-light-wood transition-colors">
@@ -135,7 +135,7 @@ export default function Home() {
           The Why
         </p>
         <h2 className="font-cinzel font-bold text-3xl text-deep-olive tracking-wide mb-6">
-          You already know something's off.
+          Most people don't know what's actually in the products they use every day. We looked it up so you don't have to.
         </h2>
         <p className="font-lora text-carved-olive text-lg leading-relaxed mb-6">
           I started paying attention to what was in my products after realizing I couldn't pronounce
@@ -156,11 +156,11 @@ export default function Home() {
       <section className="bg-parchment border-t border-warm-oak/15 py-20">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <h2 className="font-cinzel font-bold text-2xl text-deep-olive tracking-wide mb-3">
-            The Unfiltered Edit
+            Get the Free Clean Home Checklist
           </h2>
           <p className="font-lora text-carved-olive text-base leading-relaxed mb-8">
-            Every week: one swap, one ingredient to avoid, one product I actually use.
-            That's it. No overwhelm, no spam.
+            10 swaps to make right now — the exact changes I made in my own home.
+            Delivered straight to your inbox, free.
           </p>
           <EmailCapture variant="hero" source="footer-cta" />
         </div>
