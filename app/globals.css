@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  --cream: #F5F0E8;
+  --forest: #2D4A1E;
+  --leaf: #3D6828;
+  --terracotta: #C4714A;
+  --amber: #E8903A;
+  --gold: #FAD55A;
+  --earth: #8B6340;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--forest);
+  font-family: 'Lora', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-lora {
+  font-family: 'Lora', Georgia, serif;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-terracotta text-cream px-8 py-4 font-cinzel font-bold tracking-widest uppercase text-sm hover:bg-amber transition-colors duration-300;
+}
+
+.btn-secondary {
+  @apply border-2 border-forest text-forest px-8 py-4 font-cinzel font-bold tracking-widest uppercase text-sm hover:bg-forest hover:text-cream transition-colors duration-300;
+}

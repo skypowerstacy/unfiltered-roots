@@ -1,0 +1,213 @@
+import Nav from '@/components/Nav'
+import EmailCapture from '@/components/EmailCapture'
+import Link from 'next/link'
+import { products } from '@/lib/products'
+
+const pillars = [
+  { icon: '🏠', title: 'Home Detox', desc: 'What\'s hiding in your cleaning products, cookware, candles and air fresheners — and what to use instead.', href: '/resources#home' },
+  { icon: '🥦', title: 'Clean Eating', desc: 'Reading labels, avoiding the dirty dozen, and making grocery swaps that don\'t cost a fortune.', href: '/resources#food' },
+  { icon: '🧴', title: 'Personal Care', desc: 'The ingredients hiding in your deodorant, shampoo, lotion and makeup — and clean alternatives that actually work.', href: '/resources#body' },
+  { icon: '🌬️', title: 'Air & Water', desc: 'Tap water reality checks, air quality inside your home, and the filters worth investing in.', href: '/resources#water' },
+]
+
+const featuredProducts = products.slice(0, 4)
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-cream">
+      <Nav />
+
+      {/* HERO */}
+      <section className="max-w-4xl mx-auto px-6 pt-20 pb-24 text-center">
+        {/* Tagline above */}
+        <p className="font-cinzel text-xs tracking-[0.3em] uppercase text-terracotta mb-8">
+          Unfiltered Truth · Rooted Living
+        </p>
+
+        {/* Main headline */}
+        <h1 className="font-cinzel font-black text-forest leading-tight mb-6"
+          style={{ fontSize: 'clamp(36px, 6vw, 72px)' }}>
+          Reclaim Your Home.
+          <br />
+          <span className="text-terracotta">Your Food.</span>
+          <br />
+          Your Body.
+        </h1>
+
+        <p className="font-lora text-earth text-lg leading-relaxed max-w-2xl mx-auto mb-12">
+          You already know something's off. I've spent years making the swaps — in my home,
+          my kitchen, my personal care routine — and I'm sharing everything I've found.
+          No fear, no overwhelm. Just facts and better choices.
+        </p>
+
+        {/* Email capture */}
+        <div id="subscribe">
+          <EmailCapture variant="hero" source="hero" />
+        </div>
+
+        <p className="font-lora text-earth/60 text-xs mt-4 tracking-wide">
+          Join the list · Unsubscribe anytime · No spam, ever
+        </p>
+      </section>
+
+      {/* DIVIDER */}
+      <div className="flex items-center justify-center gap-4 mb-20">
+        <div className="w-24 h-px bg-earth/30" />
+        <div className="w-2 h-2 rounded-full bg-terracotta" />
+        <div className="w-24 h-px bg-earth/30" />
+      </div>
+
+      {/* CONTENT PILLARS */}
+      <section className="max-w-6xl mx-auto px-6 pb-24">
+        <div className="text-center mb-14">
+          <h2 className="font-cinzel font-bold text-3xl text-forest tracking-wide mb-3">
+            What We Cover
+          </h2>
+          <p className="font-lora text-earth text-base max-w-xl mx-auto">
+            Four areas of your life where small changes make the biggest difference.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {pillars.map((pillar) => (
+            <Link key={pillar.title} href={pillar.href}
+              className="group bg-white border border-earth/15 p-8 hover:border-terracotta transition-colors duration-300">
+              <div className="text-3xl mb-4">{pillar.icon}</div>
+              <h3 className="font-cinzel font-bold text-forest text-sm tracking-wide uppercase mb-3 group-hover:text-terracotta transition-colors">
+                {pillar.title}
+              </h3>
+              <p className="font-lora text-earth text-sm leading-relaxed">
+                {pillar.desc}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* FEATURED SWAPS */}
+      <section className="bg-forest py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <h2 className="font-cinzel font-bold text-3xl text-cream tracking-wide mb-3">
+              Start With These Swaps
+            </h2>
+            <p className="font-lora text-cream/70 text-base max-w-xl mx-auto">
+              The products I actually use and recommend — every link is vetted, nothing is sponsored.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {featuredProducts.map((product) => (
+              <a key={product.name} href={product.affiliateUrl}
+                target="_blank" rel="noopener noreferrer sponsored"
+                className="group bg-cream/10 border border-cream/10 p-6 hover:bg-cream/20 transition-colors duration-300">
+                <div className="text-xs font-cinzel tracking-widest uppercase text-terracotta mb-2">
+                  Replaces: {product.swap}
+                </div>
+                <h3 className="font-cinzel font-bold text-cream text-sm mb-2 group-hover:text-gold transition-colors">
+                  {product.name}
+                </h3>
+                <p className="font-lora text-cream/60 text-xs leading-relaxed mb-4">
+                  {product.description}
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="font-cinzel text-gold text-sm font-bold">{product.price}</span>
+                  <span className="font-cinzel text-xs tracking-widest uppercase text-cream/50 group-hover:text-terracotta transition-colors">
+                    See it →
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link href="/resources"
+              className="inline-block px-8 py-4 border-2 border-cream text-cream font-cinzel font-bold tracking-widest uppercase text-xs hover:bg-cream hover:text-forest transition-colors duration-300">
+              See All Recommended Products →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SOCIAL PROOF / ABOUT */}
+      <section className="max-w-3xl mx-auto px-6 py-24 text-center">
+        <p className="font-cinzel text-xs tracking-[0.3em] uppercase text-terracotta mb-6">
+          The Why
+        </p>
+        <h2 className="font-cinzel font-bold text-3xl text-forest tracking-wide mb-6">
+          You already know something's off.
+        </h2>
+        <p className="font-lora text-earth text-lg leading-relaxed mb-6">
+          I started paying attention to what was in my products after realizing I couldn't pronounce
+          half the ingredients in things I used every day. That rabbit hole changed everything.
+        </p>
+        <p className="font-lora text-earth text-lg leading-relaxed mb-10">
+          Unfiltered Roots is where I share what I've found — the swaps that actually work,
+          the ingredients to watch out for, and the small changes that add up to a fundamentally
+          different way of living. No perfection required. Just progress.
+        </p>
+        <Link href="/start-here"
+          className="inline-block px-8 py-4 bg-terracotta text-cream font-cinzel font-bold tracking-widest uppercase text-xs hover:bg-amber transition-colors duration-300">
+          Start Here →
+        </Link>
+      </section>
+
+      {/* NEWSLETTER CTA */}
+      <section className="bg-cream border-t border-earth/15 py-20">
+        <div className="max-w-2xl mx-auto px-6 text-center">
+          <h2 className="font-cinzel font-bold text-2xl text-forest tracking-wide mb-3">
+            The Unfiltered Edit
+          </h2>
+          <p className="font-lora text-earth text-base leading-relaxed mb-8">
+            Every week: one swap, one ingredient to avoid, one product I actually use.
+            That's it. No overwhelm, no spam.
+          </p>
+          <EmailCapture variant="hero" source="footer-cta" />
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-forest py-12">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="text-center md:text-left">
+              <div className="font-cinzel font-black text-cream tracking-widest uppercase text-lg">
+                Unfiltered Roots
+              </div>
+              <div className="font-cinzel text-terracotta tracking-[0.2em] uppercase text-xs mt-1">
+                Where Clean Living Takes Root
+              </div>
+            </div>
+            <div className="flex items-center gap-8">
+              <a href="https://instagram.com/unfilteredroots" target="_blank" rel="noopener noreferrer"
+                className="font-cinzel text-xs tracking-widest uppercase text-cream/70 hover:text-terracotta transition-colors">
+                Instagram
+              </a>
+              <a href="https://youtube.com/@theunfilteredroots" target="_blank" rel="noopener noreferrer"
+                className="font-cinzel text-xs tracking-widest uppercase text-cream/70 hover:text-terracotta transition-colors">
+                YouTube
+              </a>
+              <Link href="/start-here"
+                className="font-cinzel text-xs tracking-widest uppercase text-cream/70 hover:text-terracotta transition-colors">
+                Start Here
+              </Link>
+              <Link href="/resources"
+                className="font-cinzel text-xs tracking-widest uppercase text-cream/70 hover:text-terracotta transition-colors">
+                Resources
+              </Link>
+            </div>
+          </div>
+          <div className="border-t border-cream/10 mt-8 pt-8 text-center">
+            <p className="font-lora text-cream/40 text-xs leading-relaxed">
+              This site contains affiliate links. If you purchase through these links I may earn a small commission
+              at no extra cost to you. I only recommend products I genuinely use and believe in.
+            </p>
+            <p className="font-lora text-cream/30 text-xs mt-2">
+              © {new Date().getFullYear()} Unfiltered Roots · All rights reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  )
+}
