@@ -11,11 +11,14 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Wordmark */}
         <Link href="/" className="flex items-center">
-          <span
-            className="text-deep-olive tracking-wide uppercase text-xl leading-none"
-            style={{ fontFamily: "'Alfa Slab One', serif" }}
-          >
-            Unfiltered Roots
+          <span style={{
+            fontFamily: '"Alfa Slab One", serif',
+            fontWeight: 400,
+            fontSize: '22px',
+            color: '#2C3D1A',
+            letterSpacing: '0.04em'
+          }}>
+            UNFILTERED ROOTS
           </span>
         </Link>
 
