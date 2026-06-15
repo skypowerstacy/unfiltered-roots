@@ -41,7 +41,7 @@ export default function Home() {
         </p>
 
         {/* Email capture */}
-        <div id="subscribe">
+        <div>
           <EmailCapture variant="hero" source="hero" />
         </div>
 
@@ -150,7 +150,7 @@ export default function Home() {
       </section>
 
       {/* NEWSLETTER CTA */}
-      <section className="bg-parchment border-t border-warm-oak/15 py-20">
+      <section id="subscribe" className="bg-parchment border-t border-warm-oak/15 py-20">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <h2 className="font-cinzel font-bold text-2xl text-deep-olive tracking-wide mb-3">
             Get the Free Clean Home Checklist
