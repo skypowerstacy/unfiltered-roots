@@ -17,18 +17,18 @@ const swaps = [
 
 export default function StartHere() {
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-parchment">
       <Nav />
 
       {/* Hero */}
       <section className="max-w-3xl mx-auto px-6 pt-20 pb-16 text-center">
-        <p className="font-cinzel text-xs tracking-[0.3em] uppercase text-terracotta mb-6">
+        <p className="font-cinzel text-xs tracking-[0.3em] uppercase text-saddle mb-6">
           New here? Start here.
         </p>
-        <h1 className="font-cinzel font-black text-4xl md:text-5xl text-forest tracking-wide mb-6">
+        <h1 className="font-cinzel font-black text-4xl md:text-5xl text-deep-olive tracking-wide mb-6">
           10 Swaps to Make Right Now
         </h1>
-        <p className="font-lora text-earth text-lg leading-relaxed">
+        <p className="font-lora text-carved-olive text-lg leading-relaxed">
           You don't have to change everything at once. Start with these ten.
           Each one is something I've personally made — with the research to back it up.
         </p>
@@ -36,9 +36,9 @@ export default function StartHere() {
 
       {/* Divider */}
       <div className="flex items-center justify-center gap-4 mb-16">
-        <div className="w-24 h-px bg-earth/30" />
-        <div className="w-2 h-2 rounded-full bg-terracotta" />
-        <div className="w-24 h-px bg-earth/30" />
+        <div className="w-24 h-px bg-warm-oak/30" />
+        <div className="w-2 h-2 rounded-full bg-saddle" />
+        <div className="w-24 h-px bg-warm-oak/30" />
       </div>
 
       {/* Swaps list */}
@@ -46,20 +46,20 @@ export default function StartHere() {
         <div className="flex flex-col gap-0">
           {swaps.map((swap, i) => (
             <div key={swap.number}
-              className={`flex gap-8 py-10 ${i < swaps.length - 1 ? 'border-b border-earth/15' : ''}`}>
+              className={`flex gap-8 py-10 ${i < swaps.length - 1 ? 'border-b border-warm-oak/15' : ''}`}>
               <div className="flex-shrink-0">
-                <span className="font-cinzel font-black text-3xl text-earth/25">{swap.number}</span>
+                <span className="font-cinzel font-black text-3xl text-dark-wood/25">{swap.number}</span>
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="font-cinzel text-xs tracking-widest uppercase text-terracotta">
+                  <span className="font-cinzel text-xs tracking-widest uppercase text-saddle">
                     {swap.category}
                   </span>
                 </div>
-                <h2 className="font-cinzel font-bold text-xl text-forest mb-3 tracking-wide">
+                <h2 className="font-cinzel font-bold text-xl text-deep-olive mb-3 tracking-wide">
                   {swap.title}
                 </h2>
-                <p className="font-lora text-earth leading-relaxed">
+                <p className="font-lora text-carved-olive leading-relaxed">
                   {swap.body}
                 </p>
               </div>
@@ -68,11 +68,11 @@ export default function StartHere() {
         </div>
 
         {/* CTA after list */}
-        <div className="bg-forest p-10 mt-16 text-center">
-          <h2 className="font-cinzel font-bold text-2xl text-cream tracking-wide mb-3">
+        <div className="bg-ebony p-10 mt-16 text-center">
+          <h2 className="font-cinzel font-bold text-2xl text-parchment tracking-wide mb-3">
             Want the full list?
           </h2>
-          <p className="font-lora text-cream/70 text-base leading-relaxed mb-8 max-w-lg mx-auto">
+          <p className="font-lora text-parchment/70 text-base leading-relaxed mb-8 max-w-lg mx-auto">
             Get my complete Clean Home Starter Checklist — all 10 swaps with product links —
             delivered straight to your inbox.
           </p>
@@ -82,7 +82,7 @@ export default function StartHere() {
         {/* See all resources */}
         <div className="text-center mt-12">
           <Link href="/resources"
-            className="font-cinzel text-xs tracking-widest uppercase text-forest border-b border-forest pb-1 hover:text-terracotta hover:border-terracotta transition-colors">
+            className="font-cinzel text-xs tracking-widest uppercase text-deep-olive border-b border-deep-olive pb-1 hover:text-saddle hover:border-saddle transition-colors">
             See All Recommended Products & Resources →
           </Link>
         </div>

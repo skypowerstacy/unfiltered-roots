@@ -8,13 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        cream: '#F5F0E8',
-        forest: '#2D4A1E',
-        leaf: '#3D6828',
-        terracotta: '#C4714A',
-        amber: '#E8903A',
-        gold: '#FAD55A',
-        earth: '#8B6340',
+        parchment: '#F2EBD9',
+        'deep-olive': '#2C3D1A',
+        'carved-olive': '#4A6128',
+        saddle: '#7A5C35',
+        'warm-oak': '#C4A882',
+        'light-wood': '#D4B896',
+        'dark-wood': '#4A3520',
+        ebony: '#3D3020',
       },
       fontFamily: {
         serif: ['Georgia', 'serif'],

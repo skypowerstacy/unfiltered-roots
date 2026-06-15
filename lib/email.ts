@@ -13,19 +13,19 @@ export async function sendWelcomeEmail(email: string) {
         <html>
         <head>
           <style>
-            body { font-family: Georgia, serif; background: #F5F0E8; margin: 0; padding: 0; }
+            body { font-family: Georgia, serif; background: #F2EBD9; margin: 0; padding: 0; }
             .container { max-width: 600px; margin: 0 auto; padding: 40px 24px; }
             .logo { text-align: center; margin-bottom: 32px; }
-            .logo-text { font-size: 28px; font-weight: 900; color: #2D4A1E; letter-spacing: 0.08em; text-transform: uppercase; }
-            .logo-sub { font-size: 14px; color: #C4714A; letter-spacing: 0.2em; text-transform: uppercase; }
-            h1 { color: #2D4A1E; font-size: 24px; margin-bottom: 16px; }
-            p { color: #2D4A1E; line-height: 1.8; font-size: 16px; }
-            .checklist { background: white; border-left: 4px solid #C4714A; padding: 24px; margin: 24px 0; border-radius: 4px; }
-            .checklist-item { display: flex; align-items: flex-start; margin-bottom: 12px; color: #2D4A1E; font-size: 15px; line-height: 1.6; }
-            .check { color: #C4714A; font-weight: bold; margin-right: 10px; flex-shrink: 0; }
-            .btn { display: block; background: #C4714A; color: white; text-align: center; padding: 16px 32px; text-decoration: none; font-weight: bold; letter-spacing: 0.1em; text-transform: uppercase; font-size: 13px; margin: 24px 0; border-radius: 2px; }
-            .divider { border: none; border-top: 1px solid #C4714A44; margin: 32px 0; }
-            .footer { text-align: center; color: #8B6340; font-size: 12px; }
+            .logo-text { font-size: 28px; font-weight: 900; color: #2C3D1A; letter-spacing: 0.08em; text-transform: uppercase; }
+            .logo-sub { font-size: 14px; color: #7A5C35; letter-spacing: 0.2em; text-transform: uppercase; }
+            h1 { color: #2C3D1A; font-size: 24px; margin-bottom: 16px; }
+            p { color: #2C3D1A; line-height: 1.8; font-size: 16px; }
+            .checklist { background: white; border-left: 4px solid #7A5C35; padding: 24px; margin: 24px 0; border-radius: 4px; }
+            .checklist-item { display: flex; align-items: flex-start; margin-bottom: 12px; color: #2C3D1A; font-size: 15px; line-height: 1.6; }
+            .check { color: #7A5C35; font-weight: bold; margin-right: 10px; flex-shrink: 0; }
+            .btn { display: block; background: #7A5C35; color: white; text-align: center; padding: 16px 32px; text-decoration: none; font-weight: bold; letter-spacing: 0.1em; text-transform: uppercase; font-size: 13px; margin: 24px 0; border-radius: 2px; }
+            .divider { border: none; border-top: 1px solid #7A5C3544; margin: 32px 0; }
+            .footer { text-align: center; color: #4A3520; font-size: 12px; }
           </style>
         </head>
         <body>
@@ -62,14 +62,14 @@ export async function sendWelcomeEmail(email: string) {
 
             <p>Every week I send one swap, one ingredient to avoid, and one product I actually use. That's it. No overwhelm.</p>
 
-            <p>Follow along on Instagram <a href="https://instagram.com/unfilteredroots" style="color: #C4714A;">@unfilteredroots</a> for daily clean living content.</p>
+            <p>Follow along on Instagram <a href="https://instagram.com/unfilteredroots" style="color: #7A5C35;">@unfilteredroots</a> for daily clean living content.</p>
 
             <p style="margin-top: 32px;">Talk soon,<br/><strong>Unfiltered Roots</strong></p>
 
             <hr class="divider" />
             <div class="footer">
               <p>You're receiving this because you signed up at unfilteredroots.com</p>
-              <p><a href="{{{UNSUBSCRIBE_URL}}}" style="color: #8B6340;">Unsubscribe</a></p>
+              <p><a href="{{{UNSUBSCRIBE_URL}}}" style="color: #4A3520;">Unsubscribe</a></p>
             </div>
           </div>
         </body>

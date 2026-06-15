@@ -13,20 +13,20 @@ const categories: { id: Product['category']; label: string; icon: string; desc: 
 function ProductCard({ product }: { product: Product }) {
   return (
     <a href={product.affiliateUrl} target="_blank" rel="noopener noreferrer sponsored"
-      className="group border border-earth/15 bg-white p-6 hover:border-terracotta transition-colors duration-300 flex flex-col">
-      <div className="text-xs font-cinzel tracking-widest uppercase text-terracotta mb-2">
+      className="group border border-warm-oak/15 bg-white p-6 hover:border-saddle transition-colors duration-300 flex flex-col">
+      <div className="text-xs font-cinzel tracking-widest uppercase text-saddle mb-2">
         Replaces: {product.swap}
       </div>
-      <h3 className="font-cinzel font-bold text-forest text-sm mb-1 group-hover:text-terracotta transition-colors">
+      <h3 className="font-cinzel font-bold text-deep-olive text-sm mb-1 group-hover:text-saddle transition-colors">
         {product.name}
       </h3>
-      <p className="font-lora text-xs text-earth/70 mb-1">{product.brand}</p>
-      <p className="font-lora text-earth text-sm leading-relaxed flex-1 mt-3">
+      <p className="font-lora text-xs text-carved-olive/70 mb-1">{product.brand}</p>
+      <p className="font-lora text-carved-olive text-sm leading-relaxed flex-1 mt-3">
         {product.description}
       </p>
-      <div className="flex items-center justify-between mt-4 pt-4 border-t border-earth/10">
-        <span className="font-cinzel font-bold text-forest">{product.price}</span>
-        <span className="font-cinzel text-xs tracking-widest uppercase text-terracotta group-hover:underline">
+      <div className="flex items-center justify-between mt-4 pt-4 border-t border-warm-oak/10">
+        <span className="font-cinzel font-bold text-deep-olive">{product.price}</span>
+        <span className="font-cinzel text-xs tracking-widest uppercase text-saddle group-hover:underline">
           Shop →
         </span>
       </div>
@@ -36,18 +36,18 @@ function ProductCard({ product }: { product: Product }) {
 
 export default function Resources() {
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-parchment">
       <Nav />
 
       {/* Hero */}
       <section className="max-w-3xl mx-auto px-6 pt-20 pb-16 text-center">
-        <p className="font-cinzel text-xs tracking-[0.3em] uppercase text-terracotta mb-6">
+        <p className="font-cinzel text-xs tracking-[0.3em] uppercase text-saddle mb-6">
           Everything I actually use
         </p>
-        <h1 className="font-cinzel font-black text-4xl md:text-5xl text-forest tracking-wide mb-6">
+        <h1 className="font-cinzel font-black text-4xl md:text-5xl text-deep-olive tracking-wide mb-6">
           Recommended Products
         </h1>
-        <p className="font-lora text-earth text-lg leading-relaxed max-w-2xl mx-auto">
+        <p className="font-lora text-carved-olive text-lg leading-relaxed max-w-2xl mx-auto">
           Every product here is something I've personally vetted. Some links are affiliate links —
           I earn a small commission if you buy, at no extra cost to you.
           I never recommend anything I wouldn't use myself.
@@ -64,10 +64,10 @@ export default function Resources() {
             <div className="flex items-center gap-4 mb-8">
               <span className="text-3xl">{cat.icon}</span>
               <div>
-                <h2 className="font-cinzel font-bold text-2xl text-forest tracking-wide">
+                <h2 className="font-cinzel font-bold text-2xl text-deep-olive tracking-wide">
                   {cat.label}
                 </h2>
-                <p className="font-lora text-earth text-sm">{cat.desc}</p>
+                <p className="font-lora text-carved-olive text-sm">{cat.desc}</p>
               </div>
             </div>
 
@@ -77,17 +77,17 @@ export default function Resources() {
               ))}
             </div>
 
-            <div className="border-b border-earth/15 mt-16" />
+            <div className="border-b border-warm-oak/15 mt-16" />
           </section>
         )
       })}
 
       {/* Newsletter */}
       <section className="max-w-2xl mx-auto px-6 py-20 text-center">
-        <h2 className="font-cinzel font-bold text-2xl text-forest tracking-wide mb-3">
+        <h2 className="font-cinzel font-bold text-2xl text-deep-olive tracking-wide mb-3">
           New swaps every week
         </h2>
-        <p className="font-lora text-earth text-base leading-relaxed mb-8">
+        <p className="font-lora text-carved-olive text-base leading-relaxed mb-8">
           I update this list regularly as I find new products worth recommending.
           Join the newsletter to get new swaps delivered weekly.
         </p>

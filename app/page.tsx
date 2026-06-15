@@ -14,27 +14,27 @@ const featuredProducts = products.slice(0, 4)
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-parchment">
       <Nav />
 
       {/* HERO */}
       <section className="max-w-4xl mx-auto px-6 pt-20 pb-24 text-center">
         {/* Tagline above */}
-        <p className="font-cinzel text-xs tracking-[0.3em] uppercase text-terracotta mb-8">
+        <p className="font-cinzel text-xs tracking-[0.3em] uppercase text-saddle mb-8">
           Unfiltered Truth · Rooted Living
         </p>
 
         {/* Main headline */}
-        <h1 className="font-cinzel font-black text-forest leading-tight mb-6"
+        <h1 className="font-cinzel font-black text-deep-olive leading-tight mb-6"
           style={{ fontSize: 'clamp(36px, 6vw, 72px)' }}>
           Reclaim Your Home.
           <br />
-          <span className="text-terracotta">Your Food.</span>
+          <span className="text-saddle">Your Food.</span>
           <br />
           Your Body.
         </h1>
 
-        <p className="font-lora text-earth text-lg leading-relaxed max-w-2xl mx-auto mb-12">
+        <p className="font-lora text-carved-olive text-lg leading-relaxed max-w-2xl mx-auto mb-12">
           You already know something's off. I've spent years making the swaps — in my home,
           my kitchen, my personal care routine — and I'm sharing everything I've found.
           No fear, no overwhelm. Just facts and better choices.
@@ -45,25 +45,25 @@ export default function Home() {
           <EmailCapture variant="hero" source="hero" />
         </div>
 
-        <p className="font-lora text-earth/60 text-xs mt-4 tracking-wide">
+        <p className="font-lora text-carved-olive/60 text-xs mt-4 tracking-wide">
           Join the list · Unsubscribe anytime · No spam, ever
         </p>
       </section>
 
       {/* DIVIDER */}
       <div className="flex items-center justify-center gap-4 mb-20">
-        <div className="w-24 h-px bg-earth/30" />
-        <div className="w-2 h-2 rounded-full bg-terracotta" />
-        <div className="w-24 h-px bg-earth/30" />
+        <div className="w-24 h-px bg-warm-oak/30" />
+        <div className="w-2 h-2 rounded-full bg-saddle" />
+        <div className="w-24 h-px bg-warm-oak/30" />
       </div>
 
       {/* CONTENT PILLARS */}
       <section className="max-w-6xl mx-auto px-6 pb-24">
         <div className="text-center mb-14">
-          <h2 className="font-cinzel font-bold text-3xl text-forest tracking-wide mb-3">
+          <h2 className="font-cinzel font-bold text-3xl text-deep-olive tracking-wide mb-3">
             What We Cover
           </h2>
-          <p className="font-lora text-earth text-base max-w-xl mx-auto">
+          <p className="font-lora text-carved-olive text-base max-w-xl mx-auto">
             Four areas of your life where small changes make the biggest difference.
           </p>
         </div>
@@ -71,12 +71,12 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {pillars.map((pillar) => (
             <Link key={pillar.title} href={pillar.href}
-              className="group bg-white border border-earth/15 p-8 hover:border-terracotta transition-colors duration-300">
+              className="group bg-white border border-warm-oak/15 p-8 hover:border-saddle transition-colors duration-300">
               <div className="text-3xl mb-4">{pillar.icon}</div>
-              <h3 className="font-cinzel font-bold text-forest text-sm tracking-wide uppercase mb-3 group-hover:text-terracotta transition-colors">
+              <h3 className="font-cinzel font-bold text-deep-olive text-sm tracking-wide uppercase mb-3 group-hover:text-saddle transition-colors">
                 {pillar.title}
               </h3>
-              <p className="font-lora text-earth text-sm leading-relaxed">
+              <p className="font-lora text-carved-olive text-sm leading-relaxed">
                 {pillar.desc}
               </p>
             </Link>
@@ -85,13 +85,13 @@ export default function Home() {
       </section>
 
       {/* FEATURED SWAPS */}
-      <section className="bg-forest py-24">
+      <section className="bg-ebony py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <h2 className="font-cinzel font-bold text-3xl text-cream tracking-wide mb-3">
+            <h2 className="font-cinzel font-bold text-3xl text-parchment tracking-wide mb-3">
               Start With These Swaps
             </h2>
-            <p className="font-lora text-cream/70 text-base max-w-xl mx-auto">
+            <p className="font-lora text-parchment/70 text-base max-w-xl mx-auto">
               The products I actually use and recommend — every link is vetted, nothing is sponsored.
             </p>
           </div>
@@ -100,19 +100,19 @@ export default function Home() {
             {featuredProducts.map((product) => (
               <a key={product.name} href={product.affiliateUrl}
                 target="_blank" rel="noopener noreferrer sponsored"
-                className="group bg-cream/10 border border-cream/10 p-6 hover:bg-cream/20 transition-colors duration-300">
-                <div className="text-xs font-cinzel tracking-widest uppercase text-terracotta mb-2">
+                className="group bg-parchment/10 border border-parchment/10 p-6 hover:bg-parchment/20 transition-colors duration-300">
+                <div className="text-xs font-cinzel tracking-widest uppercase text-saddle mb-2">
                   Replaces: {product.swap}
                 </div>
-                <h3 className="font-cinzel font-bold text-cream text-sm mb-2 group-hover:text-gold transition-colors">
+                <h3 className="font-cinzel font-bold text-parchment text-sm mb-2 group-hover:text-light-wood transition-colors">
                   {product.name}
                 </h3>
-                <p className="font-lora text-cream/60 text-xs leading-relaxed mb-4">
+                <p className="font-lora text-parchment/60 text-xs leading-relaxed mb-4">
                   {product.description}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="font-cinzel text-gold text-sm font-bold">{product.price}</span>
-                  <span className="font-cinzel text-xs tracking-widest uppercase text-cream/50 group-hover:text-terracotta transition-colors">
+                  <span className="font-cinzel text-light-wood text-sm font-bold">{product.price}</span>
+                  <span className="font-cinzel text-xs tracking-widest uppercase text-parchment/50 group-hover:text-saddle transition-colors">
                     See it →
                   </span>
                 </div>
@@ -122,7 +122,7 @@ export default function Home() {
 
           <div className="text-center mt-10">
             <Link href="/resources"
-              className="inline-block px-8 py-4 border-2 border-cream text-cream font-cinzel font-bold tracking-widest uppercase text-xs hover:bg-cream hover:text-forest transition-colors duration-300">
+              className="inline-block px-8 py-4 border-2 border-parchment text-parchment font-cinzel font-bold tracking-widest uppercase text-xs hover:bg-parchment hover:text-deep-olive transition-colors duration-300">
               See All Recommended Products →
             </Link>
           </div>
@@ -131,34 +131,34 @@ export default function Home() {
 
       {/* SOCIAL PROOF / ABOUT */}
       <section className="max-w-3xl mx-auto px-6 py-24 text-center">
-        <p className="font-cinzel text-xs tracking-[0.3em] uppercase text-terracotta mb-6">
+        <p className="font-cinzel text-xs tracking-[0.3em] uppercase text-saddle mb-6">
           The Why
         </p>
-        <h2 className="font-cinzel font-bold text-3xl text-forest tracking-wide mb-6">
+        <h2 className="font-cinzel font-bold text-3xl text-deep-olive tracking-wide mb-6">
           You already know something's off.
         </h2>
-        <p className="font-lora text-earth text-lg leading-relaxed mb-6">
+        <p className="font-lora text-carved-olive text-lg leading-relaxed mb-6">
           I started paying attention to what was in my products after realizing I couldn't pronounce
           half the ingredients in things I used every day. That rabbit hole changed everything.
         </p>
-        <p className="font-lora text-earth text-lg leading-relaxed mb-10">
+        <p className="font-lora text-carved-olive text-lg leading-relaxed mb-10">
           Unfiltered Roots is where I share what I've found — the swaps that actually work,
           the ingredients to watch out for, and the small changes that add up to a fundamentally
           different way of living. No perfection required. Just progress.
         </p>
         <Link href="/start-here"
-          className="inline-block px-8 py-4 bg-terracotta text-cream font-cinzel font-bold tracking-widest uppercase text-xs hover:bg-amber transition-colors duration-300">
+          className="inline-block px-8 py-4 bg-saddle text-parchment font-cinzel font-bold tracking-widest uppercase text-xs hover:bg-warm-oak transition-colors duration-300">
           Start Here →
         </Link>
       </section>
 
       {/* NEWSLETTER CTA */}
-      <section className="bg-cream border-t border-earth/15 py-20">
+      <section className="bg-parchment border-t border-warm-oak/15 py-20">
         <div className="max-w-2xl mx-auto px-6 text-center">
-          <h2 className="font-cinzel font-bold text-2xl text-forest tracking-wide mb-3">
+          <h2 className="font-cinzel font-bold text-2xl text-deep-olive tracking-wide mb-3">
             The Unfiltered Edit
           </h2>
-          <p className="font-lora text-earth text-base leading-relaxed mb-8">
+          <p className="font-lora text-carved-olive text-base leading-relaxed mb-8">
             Every week: one swap, one ingredient to avoid, one product I actually use.
             That's it. No overwhelm, no spam.
           </p>
@@ -167,42 +167,42 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-forest py-12">
+      <footer className="bg-ebony py-12">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left">
-              <div className="font-cinzel font-black text-cream tracking-widest uppercase text-lg">
+              <div className="font-cinzel font-black text-parchment tracking-widest uppercase text-lg">
                 Unfiltered Roots
               </div>
-              <div className="font-cinzel text-terracotta tracking-[0.2em] uppercase text-xs mt-1">
+              <div className="font-cinzel text-saddle tracking-[0.2em] uppercase text-xs mt-1">
                 Where Clean Living Takes Root
               </div>
             </div>
             <div className="flex items-center gap-8">
               <a href="https://instagram.com/unfilteredroots" target="_blank" rel="noopener noreferrer"
-                className="font-cinzel text-xs tracking-widest uppercase text-cream/70 hover:text-terracotta transition-colors">
+                className="font-cinzel text-xs tracking-widest uppercase text-parchment/70 hover:text-saddle transition-colors">
                 Instagram
               </a>
               <a href="https://youtube.com/@theunfilteredroots" target="_blank" rel="noopener noreferrer"
-                className="font-cinzel text-xs tracking-widest uppercase text-cream/70 hover:text-terracotta transition-colors">
+                className="font-cinzel text-xs tracking-widest uppercase text-parchment/70 hover:text-saddle transition-colors">
                 YouTube
               </a>
               <Link href="/start-here"
-                className="font-cinzel text-xs tracking-widest uppercase text-cream/70 hover:text-terracotta transition-colors">
+                className="font-cinzel text-xs tracking-widest uppercase text-parchment/70 hover:text-saddle transition-colors">
                 Start Here
               </Link>
               <Link href="/resources"
-                className="font-cinzel text-xs tracking-widest uppercase text-cream/70 hover:text-terracotta transition-colors">
+                className="font-cinzel text-xs tracking-widest uppercase text-parchment/70 hover:text-saddle transition-colors">
                 Resources
               </Link>
             </div>
           </div>
-          <div className="border-t border-cream/10 mt-8 pt-8 text-center">
-            <p className="font-lora text-cream/40 text-xs leading-relaxed">
+          <div className="border-t border-parchment/10 mt-8 pt-8 text-center">
+            <p className="font-lora text-parchment/40 text-xs leading-relaxed">
               This site contains affiliate links. If you purchase through these links I may earn a small commission
               at no extra cost to you. I only recommend products I genuinely use and believe in.
             </p>
-            <p className="font-lora text-cream/30 text-xs mt-2">
+            <p className="font-lora text-parchment/30 text-xs mt-2">
               © {new Date().getFullYear()} Unfiltered Roots · All rights reserved
             </p>
           </div>
