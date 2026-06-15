@@ -38,7 +38,7 @@ export default function Nav() {
             className="font-cinzel text-xs tracking-widest uppercase text-deep-olive hover:text-saddle transition-colors">
             YouTube
           </a>
-          <Link href="#subscribe"
+          <Link href="/#subscribe"
             className="px-5 py-2 bg-saddle text-parchment font-cinzel font-bold tracking-widest uppercase text-xs hover:bg-warm-oak transition-colors">
             Free Checklist
           </Link>
@@ -67,7 +67,7 @@ export default function Nav() {
             className="font-cinzel text-sm tracking-widest uppercase text-deep-olive">Instagram</a>
           <a href="https://youtube.com/@theunfilteredroots" target="_blank" rel="noopener noreferrer"
             className="font-cinzel text-sm tracking-widest uppercase text-deep-olive">YouTube</a>
-          <Link href="#subscribe" onClick={() => setOpen(false)}
+          <Link href="/#subscribe" onClick={() => setOpen(false)}
             className="font-cinzel text-sm tracking-widest uppercase text-saddle font-bold">Free Checklist →</Link>
         </div>
       )}

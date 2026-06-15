@@ -35,9 +35,9 @@ export default function Home() {
         </h1>
 
         <p className="font-lora text-carved-olive text-lg leading-relaxed max-w-2xl mx-auto mb-12">
-          You already know something's off. I've spent years making the swaps — in my home,
-          my kitchen, my personal care routine — and I'm sharing everything I've found.
-          No fear, no overwhelm. Just facts and better choices.
+          The products filling our homes, kitchens and bathrooms are largely
+          unregulated — and most of us never think to question them.
+          We did. Here's what we found.
         </p>
 
         {/* Email capture */}
