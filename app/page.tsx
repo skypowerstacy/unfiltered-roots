@@ -25,8 +25,8 @@ export default function Home() {
           <Image
             src="/ur-logo-transparent.png"
             alt="Unfiltered Roots"
-            width={280}
-            height={280}
+            width={420}
+            height={420}
             className="object-contain"
             priority
           />

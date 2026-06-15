@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
@@ -10,17 +9,12 @@ export default function Nav() {
   return (
     <nav className="w-full bg-parchment border-b border-warm-oak/20 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo + wordmark */}
-        <Link href="/" className="flex items-center gap-3">
-          <Image
-            src="/ur-logo-transparent.png"
-            alt="Unfiltered Roots"
-            width={120}
-            height={120}
-            className="object-contain h-14 w-auto"
-            priority
-          />
-          <span className="font-display text-deep-olive tracking-wide uppercase text-lg leading-none">
+        {/* Wordmark */}
+        <Link href="/" className="flex items-center">
+          <span
+            className="text-deep-olive tracking-wide uppercase text-xl leading-none"
+            style={{ fontFamily: "'Alfa Slab One', serif" }}
+          >
             Unfiltered Roots
           </span>
         </Link>
