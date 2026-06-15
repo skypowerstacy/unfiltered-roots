@@ -13,11 +13,11 @@ export default function Nav() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/ur-logo.png"
+            src="/ur-logo-transparent.png"
             alt="Unfiltered Roots"
             width={120}
             height={120}
-            className="object-contain h-16 w-auto"
+            className="object-contain h-14 w-auto"
             priority
           />
         </Link>
