@@ -25,3 +25,8 @@ CREATE POLICY "Service role only" ON email_subscribers
 -- Allow inserts from anon (for the subscribe API route)
 CREATE POLICY "Allow inserts" ON email_subscribers
   FOR INSERT WITH CHECK (true);
+
+-- Grant table privileges to Postgres roles used by PostgREST
+GRANT ALL ON email_subscribers TO service_role;
+GRANT INSERT ON email_subscribers TO anon;
+GRANT INSERT ON email_subscribers TO authenticated;
