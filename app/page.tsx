@@ -135,16 +135,13 @@ export default function Home() {
           The Why
         </p>
         <h2 className="font-cinzel font-bold text-3xl text-deep-olive tracking-wide mb-6">
-          Most people don't know what's actually in the products they use every day. We looked it up so you don't have to.
+          We Read The Labels So You Don't Have To.
         </h2>
-        <p className="font-lora text-carved-olive text-lg leading-relaxed mb-6">
-          I started paying attention to what was in my products after realizing I couldn't pronounce
-          half the ingredients in things I used every day. That rabbit hole changed everything.
-        </p>
         <p className="font-lora text-carved-olive text-lg leading-relaxed mb-10">
-          Unfiltered Roots is where I share what I've found — the swaps that actually work,
-          the ingredients to watch out for, and the small changes that add up to a fundamentally
-          different way of living. No perfection required. Just progress.
+          Most people use the same products for years without ever questioning what's in them.
+          I started asking those questions — and what I found changed everything about how I shop,
+          cook, and live. Unfiltered Roots is where I share what I've learned.
+          No judgment, no rabbit holes. Just practical swaps that actually make a difference.
         </p>
         <Link href="/start-here"
           className="inline-block px-8 py-4 bg-saddle text-parchment font-cinzel font-bold tracking-widest uppercase text-xs hover:bg-warm-oak transition-colors duration-300">

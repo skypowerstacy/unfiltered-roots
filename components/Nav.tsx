@@ -9,15 +9,15 @@ export default function Nav() {
 
   return (
     <nav className="w-full bg-parchment border-b border-warm-oak/20 sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
             src="/ur-logo.png"
             alt="Unfiltered Roots"
-            width={3870}
-            height={2160}
-            className="h-12 w-auto"
+            width={120}
+            height={120}
+            className="object-contain h-16 w-auto"
             priority
           />
         </Link>
